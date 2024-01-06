@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     keymap {
@@ -42,11 +43,11 @@
 
             label = "Lower";
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                           &trans           &trans     &trans                &trans                 &trans         &trans
-&kp LG(TAB)  &kp LG(Q)     &kp LG(W)     &kp UP_ARROW  &kp LG(LS(F))  &kp LG(T)                              &kp F7           &kp F8     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp F11        &kp F12
-&kp GRAVE    &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)      &kp PRCNT                              &kp EXCLAMATION  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans
-&trans       &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)      &trans        &trans    &trans         &kp KP_PLUS      &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LG(SLASH)  &kp PIPE
-                                         &trans        &trans         &trans        &trans    &kp BACKSPACE  &trans           &trans     &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                           &trans       &trans                &trans                 &kt K_MUTE             &kt C_VOLUME_DOWN  &kt C_VOLUME_UP
+&kp LG(TAB)  &kp LG(Q)     &kp LG(W)     &kp UP_ARROW  &kp LG(LS(F))  &kp LG(T)                              &kp F7       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp LEFT_BRACE     &kp RIGHT_BRACE
+&kp GRAVE    &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)      &kp PRCNT                              &kp LEFT     &kp RIGHT             &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &trans             &trans
+&trans       &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)      &trans        &trans    &trans         &kp KP_PLUS  &kp MINUS             &kp LEFT_BRACE         &kp RIGHT_BRACE        &kp LG(SLASH)      &kp PIPE
+                                         &trans        &trans         &trans        &trans    &kp LG(SPACE)  &trans       &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -62,11 +63,11 @@
 
             label = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                     &trans          &trans           &trans        &trans           &trans          &trans
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6          &kp N7           &kp N8        &kp N9           &kp N0          &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS     &kp EXCLAMATION  &kp EQUAL     &kp LBKT         &kp RBKT        &kp BSLH
-                           &trans   &trans   &trans   &trans    &trans  &trans          &trans           &trans
+&trans     &trans  &trans  &trans              &trans   &trans                     &trans          &trans           &trans        &trans           &trans          &trans
+&kp GRAVE  &kp N1  &kp N2  &kp LA(UP_ARROW)    &kp N4   &kp N5                     &kp N6          &kp N7           &kp N8        &kp N9           &kp N0          &trans
+&kp F1     &kp F2  &kp F3  &kp LA(DOWN_ARROW)  &kp F5   &kp F6                     &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp F7     &kp F8  &kp F9  &kp F10             &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS     &kp EXCLAMATION  &kp EQUAL     &kp LBKT         &kp RBKT        &kp BSLH
+                           &trans              &trans   &trans   &trans    &trans  &trans          &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
