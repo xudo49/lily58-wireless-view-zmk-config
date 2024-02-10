@@ -43,10 +43,10 @@
 
             label = "Lower";
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                           &trans       &trans                &trans                 &kt K_MUTE             &kt C_VOLUME_DOWN  &kt C_VOLUME_UP
-&kp LG(TAB)  &kp LG(Q)     &kp LG(W)     &kp UP_ARROW  &kp LG(LS(F))  &kp LG(T)                              &kp F7       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp LEFT_BRACE     &kp RIGHT_BRACE
-&kp GRAVE    &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)      &kp PRCNT                              &kp LEFT     &kp RIGHT             &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &trans             &trans
-&trans       &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)      &trans        &trans    &trans         &kp KP_PLUS  &kp MINUS             &kp LEFT_BRACE         &kp RIGHT_BRACE        &kp LG(SLASH)      &kp PIPE
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                           &trans       &trans                &trans                 &kt K_MUTE             &kt K_VOLUME_DOWN2  &kt K_VOLUME_UP2
+&kp LG(TAB)  &kp LG(Q)     &kp LG(W)     &kp UP_ARROW  &kp LG(LS(F))  &kp LG(T)                              &kp F7       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp LEFT_BRACE      &kp RIGHT_BRACE
+&kp GRAVE    &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)      &kp PRCNT                              &kp LEFT     &kp RIGHT             &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &trans              &trans
+&trans       &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)      &trans        &trans    &trans         &kp KP_PLUS  &kp MINUS             &kp LEFT_BRACE         &kp RIGHT_BRACE        &kp LG(SLASH)       &kp PIPE
                                          &trans        &trans         &trans        &trans    &kp LG(SPACE)  &trans       &trans                &trans
             >;
 
